@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class App
 {
+    static final double CONVERSION = 0.09290304;
     public static void main( String[] args )
     {
         Scanner scnr = new Scanner(System.in);
@@ -19,7 +20,8 @@ public class App
 
         System.out.format("The are is:\n%d square feet\n", area);
 
-        double meterSq = area * 0.09290304;
+
+        double meterSq = area * CONVERSION;
 
         System.out.format("%.3f square meters", meterSq);
 
